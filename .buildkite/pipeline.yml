@@ -1,14 +1,20 @@
 # Default pipeline from cli
 steps:
-  - label: ":sparkles: lint"
+  - label: ':sparkles: lint'
     plugins:
       - plugin-linter#v2.0.0:
           id: https://github.com/amasare/buildkite-plugin-hello-world
+    agents: 
+      queue: 'base-agent'
 
-  - label: ":shell: Shellcheck"
+  - label: ':shell: Shellcheck'
     plugins:
       - shellcheck#v1.1.2:
           files: hooks/**
+    agents: 
+      queue: 'base-agent'
 
-  - label: ":electric_plug: plugin \"command\" file test"
-    command: "echo you are tested https://github.com/buildkite-plugins/buildkite-plugin-tester "
+  - label: ':electric_plug: plugin "command" file test'
+    command: 'echo you are tested https://github.com/buildkite-plugins/buildkite-plugin-tester'
+    agents: 
+      queue: 'base-agent'
