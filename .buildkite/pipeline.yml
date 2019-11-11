@@ -1,4 +1,14 @@
 # Default pipeline from cli
 steps:
-- label: ":pipeline:"
-  command: buildkite-agent pipeline upload
+  - label: ":sparkles: lint"
+    plugins:
+      - plugin-linter#v2.0.0:
+          id: https://github.com/amasare/buildkite-plugin-hello-world
+
+  - label: ":shell: Shellcheck"
+    plugins:
+      - shellcheck#v1.1.2:
+          files: hooks/**
+
+  - label: ":electric_plug: plugin "command" file test"
+    command: "echo you are tested https://github.com/buildkite-plugins/buildkite-plugin-tester "
