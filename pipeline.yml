@@ -1,0 +1,9 @@
+name: Hello World
+description: Outputs 'Hello <name>, hello world' where name can be supplied as an arg
+author: Ama Asare, DPD
+requirements:
+  - bash
+configuration:
+  properties:
+    hello_name:
+      type: string
