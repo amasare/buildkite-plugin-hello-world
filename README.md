@@ -6,6 +6,6 @@ example plugin that goes through basic steps any buildkite plugin will like to g
 ```yml
 steps:
   - plugins:
-      - https://github.com/amasare/buildkite-plugin-hello-world:
-            hello_name: Ama
+      - https://github.com/amasare/buildkite-plugin-hello-world#v1.0.0:
+          hello_name: Ama
 ```

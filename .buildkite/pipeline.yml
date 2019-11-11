@@ -10,5 +10,5 @@ steps:
       - shellcheck#v1.1.2:
           files: hooks/**
 
-  - label: ":electric_plug: plugin "command" file test"
+  - label: ":electric_plug: plugin \"command\" file test"
     command: "echo you are tested https://github.com/buildkite-plugins/buildkite-plugin-tester "
