@@ -15,6 +15,8 @@ You'll need to run this pipeline on an agent that:
 * can run `docker` commands
 *  has `plugins-path` or `BUILDKITE_PLUGINS_PATH`
 
+Make hooks/command executable
+
 ## Testing Locally
 To run tests locally you will need to: 
 *  install bats. `brew install bats-core` on MacOS. Other installation instructions [here](https://github.com/bats-core/bats-core).
