@@ -2,4 +2,4 @@
 
 set -euo pipefail
 
-echo "--- Hello ${BUILDKITE_PLUGIN_HELLO_NAME}, hello world!"
+echo "--- Hello ${BUILDKITE_PLUGIN_HELLO_NAME:=Ama}, hello world!"
