@@ -10,15 +10,15 @@ steps:
           hello_name: Ama
 ```
 
-## Running
+## Running on Buildkite
 You'll need to run this pipeline on an agent that 
-..* can run `docker` commands
-..* has `plugins-path` or `BUILDKITE_PLUGINS_PATH`
+⋅⋅* can run `docker` commands
+⋅⋅*  has `plugins-path` or `BUILDKITE_PLUGINS_PATH`
 
-## Testing 
+## Testing Locally
 To run tests locally you will need to 
-..* install bats. `brew install bats-core` on MacOS. Other installation instructions [here](https://github.com/bats-core/bats-core).
-..* run tests with buildkites plugin tester which comes with supporting test libraries. `docker run it --rm  -v "$(pwd):/plugin" buildkite/plugin-tester`.
+⋅⋅*  install bats. `brew install bats-core` on MacOS. Other installation instructions [here](https://github.com/bats-core/bats-core).
+⋅⋅*  run tests with buildkites plugin tester which comes with supporting test libraries. `docker run it --rm  -v "$(pwd):/plugin" buildkite/plugin-tester`.
 
 
 Testing recommendations [here](https://github.com/buildkite-plugins/buildkite-plugin-tester)
