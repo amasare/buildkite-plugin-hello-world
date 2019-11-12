@@ -7,7 +7,7 @@ example plugin that goes through basic steps any <client-name> buildkite plugin 
 steps:
   - plugins:
       - https://github.com/amasare/buildkite-plugin-hello-world#v1.0.0:
-          hello_name: Ama
+          helloname: Ama
 ```
 
 ## Running on Buildkite

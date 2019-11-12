@@ -7,7 +7,7 @@ command_hook="$PWD/hooks/command"
 
 @test "output hello world with name when name exists" {
 
-  export BUILDKITE_PLUGIN_HELLO_NAME="Ms Keys"
+  export BUILDKITE_PLUGIN_HELLONAME="Ms Keys"
   run "$command_hook"
 
   assert_output --partial "--- Hello Ms Keys, hello world!"
