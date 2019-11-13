@@ -2,4 +2,5 @@
 
 set -euo pipefail
 
+env | grep BUILDKITE_PLUGIN
 echo "--- Hello ${BUILDKITE_PLUGIN_BUILDKITE_PLUGIN_HELLO_WORLD_NAME:=Ama}, hello world!"
