@@ -3,3 +3,5 @@ steps:
   - label: ':woman-lifting-weights: check plugin fitness'
     plugins:
       - https://github.com/amasare/dpd-plugin-fitness-function: ~
+    agents: 
+      queue: 'base-agent'
