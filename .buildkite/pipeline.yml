@@ -3,6 +3,6 @@ steps:
   - label: ':woman-lifting-weights: kickoff fitness check'
     plugins:
       - https://github.com/amasare/dpd-plugin-fitness-function: 
-          pluginpath: https://github.com/amasare/buildkite-plugin-hello-world
+          pluginsource: https://github.com/amasare/buildkite-plugin-hello-world
     agents: 
       queue: 'base-agent'
