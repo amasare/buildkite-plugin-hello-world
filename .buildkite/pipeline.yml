@@ -1,6 +1,6 @@
 # Default pipeline from cli
 steps:
-  - label: ':woman-lifting-weights: check plugin fitness'
+  - label: ':woman-lifting-weights: kickoff fitness check'
     plugins:
       - https://github.com/amasare/dpd-plugin-fitness-function: ~
     agents: 
