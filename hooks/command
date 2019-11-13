@@ -2,5 +2,5 @@
 
 set -euo pipefail
 
-echo ${BUILDKITE_PLUGIN_HELLO_WORLD_NAME}
+echo "${BUILDKITE_PLUGIN_HELLO_WORLD_NAME:=debug}"
 echo "--- Hello ${BUILDKITE_PLUGIN_BUILDKITE_PLUGIN_HELLO_WORLD_NAME:=Ama}, hello world!"
