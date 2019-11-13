@@ -5,5 +5,5 @@ requirements:
   - bash
 configuration:
   properties:
-    helloname:
+    name:
       type: string
