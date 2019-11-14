@@ -7,3 +7,11 @@ steps:
           pluginsource: https://github.com/amasare/buildkite-plugin-hello-world
     agents: 
       queue: 'base-agent'
+  - wait
+  - label: ':man-playing-handball: kickoff release'
+    command: release
+    plugins:
+      - https://github.com/amasare/dpd-plugin-support: 
+          pluginsource: https://github.com/amasare/buildkite-plugin-hello-world
+    agents: 
+      queue: 'base-agent'
