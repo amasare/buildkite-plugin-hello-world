@@ -1,6 +1,7 @@
 # Default pipeline from cli
 steps:
   - label: ':woman-lifting-weights: kickoff fitness check'
+    command: verify-fitness
     plugins:
       - https://github.com/amasare/dpd-plugin-support: 
           pluginsource: https://github.com/amasare/buildkite-plugin-hello-world
